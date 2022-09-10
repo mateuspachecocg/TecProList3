@@ -4,14 +4,14 @@ public class Question09 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		TestCompressVector();
+		TestZipVector();
 	}
 	
 	
-	public static void TestCompressVector() {
+	public static void TestZipVector() {
 		int binaryVtr[] = {0, 0, 0, 1,  1, 1, 1, 0};
 		
-		int result[] = compressVector(binaryVtr);
+		int result[] = zipVector(binaryVtr);
 		int resultCorrect[] = {0, 3, 1, 4, 0, 1};
 		
 		boolean TestResult = true;
@@ -26,7 +26,7 @@ public class Question09 {
 		}
 	}
 	
-	public static int[] compressVector(int vtr[]) {
+	public static int[] zipVector(int vtr[]) {
 		int lengthNewVector = 1;
 		int pointer = vtr[0];
 		int i;

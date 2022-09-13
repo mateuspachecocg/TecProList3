@@ -14,8 +14,7 @@ public class Question12 {
 		String strOuput = encondingCipher(str);
 		
 		boolean testResult = strExpected.equals(strOuput);
-		System.out.println(strOuput.toString());
-		System.out.println(strExpected.toString());
+		
 		if (testResult) {
 			System.out.println("Test Passed!");
 		} else {

@@ -7,7 +7,6 @@ public class Question10 {
 		testZipVector();
 	}
 	
-	
 	public static void testZipVector() {
 		int binaryVtr[] = {0, 0, 0, 1,  1, 1, 1, 0};
 		

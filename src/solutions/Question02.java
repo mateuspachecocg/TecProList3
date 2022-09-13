@@ -4,19 +4,19 @@ public class Question02 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		TestReturnByIndex();
+		testReturnByIndex();
 	}
 	
-	public static void TestReturnByIndex() {
+	public static void testReturnByIndex() {
 		int vector_test[] = {3, 1, 9, 10, 12};
 		
-		boolean TestResult = true;
-		TestResult = TestResult && ReturnByIndex(10, vector_test) == -100;
-		TestResult = TestResult && ReturnByIndex(2, vector_test) == 9;
-		TestResult = TestResult && ReturnByIndex(0, vector_test) == 3;
-		TestResult = TestResult && ReturnByIndex(4, vector_test) == 12;
+		boolean testResult = true;
+		testResult = testResult && ReturnByIndex(10, vector_test) == -100;
+		testResult = testResult && ReturnByIndex(2, vector_test) == 9;
+		testResult = testResult && ReturnByIndex(0, vector_test) == 3;
+		testResult = testResult && ReturnByIndex(4, vector_test) == 12;
 		
-		if (TestResult) {
+		if (testResult) {
 			System.out.println("Test Passed!");
 		} else {
 			System.out.println("Test Fail!");

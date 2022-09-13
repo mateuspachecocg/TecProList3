@@ -4,21 +4,21 @@ public class Question05 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		TestAddVector();
+		testAddVector();
 	}
 	
-	public static void TestAddVector() {
+	public static void testAddVector() {
 		int vetorA[] = {6, 5, -12, 10,};
 		int vetorB[] = { 9, 1, -3, -7};
 		int vetorAB[] = {6, 5, -12, 10, 9, 1, -3, -7};
 		int vetorResult[] = addVector(vetorA, vetorB);
-		boolean TestResult = true;
+		boolean testResult = true;
 		
 		for(int i =0; i < vetorAB.length;i++) {
-			TestResult = TestResult && (vetorResult[i] == vetorAB[i]);
+			testResult = testResult && (vetorResult[i] == vetorAB[i]);
 		}
 
-		if (TestResult) {
+		if (testResult) {
 			System.out.println("Test Passed!");
 		} else {
 			System.out.println("Test Fail!");

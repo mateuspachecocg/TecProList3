@@ -4,25 +4,25 @@ public class Question04 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		TestSumAll();
+		testSumAll();
 	}
 	
-	public static void TestSumAll () {
-		int vector_test[] = {3, 1, 9, 10, 12};
-		int vector_test2[] = {3, 1, 9, 10, 12, 10};
+	public static void testSumAll () {
+		int vectorTest[] = {3, 1, 9, 10, 12};
+		int vectorTest2[] = {3, 1, 9, 10, 12, 10};
 		
-		boolean TestResult = true;
-		TestResult = TestResult && SumAll(vector_test) == 35;
-		TestResult = TestResult && SumAll(vector_test2) == 45;
+		boolean testResult = true;
+		testResult = testResult && sumAll(vectorTest) == 35;
+		testResult = testResult && sumAll(vectorTest2) == 45;
 		
-		if (TestResult) {
+		if (testResult) {
 			System.out.println("Test Passed!");
 		} else {
 			System.out.println("Test Fail!");
 		}
 	}
 	
-	public static int SumAll (int vet[]) {
+	public static int sumAll (int vet[]) {
 		int sum = 0;
 		for (int i = 0;i < vet.length;i++ ) {
 			sum += vet[i];

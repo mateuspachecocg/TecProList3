@@ -4,21 +4,21 @@ public class Question10 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		TestUnzipVector();
+		testUnzipVector();
 	}
 	
-	public static void TestUnzipVector() {
+	public static void testUnzipVector() {
 		int zipVtr[] = {0, 3, 1, 4, 0, 1};
 		
 		int result[] = unzipVector(zipVtr);
 		int resultCorrect[] = {0, 0, 0, 1,  1, 1, 1, 0};
 		
-		boolean TestResult = true;
+		boolean testResult = true;
 		for(int i =0; i < result.length;i++) {
-			TestResult = TestResult && (result[i] == resultCorrect[i]);
+			testResult = testResult && (result[i] == resultCorrect[i]);
 		}
 
-		if (TestResult) {
+		if (testResult) {
 			System.out.println("Test Passed!");
 		} else {
 			System.out.println("Test Fail!");

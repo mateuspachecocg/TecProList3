@@ -3,21 +3,21 @@ package solutions;
 public class Question06 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		TestAddVector();
+		testAddVector();
 	}
 	
-	public static void TestAddVector() {
+	public static void testAddVector() {
 		int vectorOriginal[] = {-7, -3, 1, 9, 10, -12, 5, 6};
 		int vector[] = {6, 5, -12, 10, 9, 1, -3, -7};
 		int vectorResult[] = vectorInverter(vectorOriginal);
 		
-		boolean TestResult = true;
+		boolean testResult = true;
 		
 		for(int i =0; i < vector.length;i++) {
-			TestResult = TestResult && (vectorResult[i] == vector[i]);
+			testResult = testResult && (vectorResult[i] == vector[i]);
 		}
 
-		if (TestResult) {
+		if (testResult) {
 			System.out.println("Test Passed!");
 		} else {
 			System.out.println("Test Fail!");

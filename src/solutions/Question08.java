@@ -4,26 +4,26 @@ public class Question08 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		TestPriorizationVector();
+		testPriorizationVector();
 	}
 	
 	
-	public static void TestPriorizationVector() {
+	public static void testPriorizationVector() {
 		int vetorA[] = {6, 5, -12, 10};
 
 		int newVector[] = priorizationVector(vetorA);
 		int vetorSolution[] = {6, 10};
 		
-		boolean TestResult = true;
+		boolean testResult = true;
 		if(vetorSolution.length == newVector.length) {
 			for(int i =0; i < newVector.length;i++) {
-				TestResult = TestResult && (newVector[i] == vetorSolution[i]);
+				testResult = testResult && (newVector[i] == vetorSolution[i]);
 			}
 		} else {
-			TestResult = false;
+			testResult = false;
 		}
 
-		if (TestResult) {
+		if (testResult) {
 			System.out.println("Test Passed!");
 		} else {
 			System.out.println("Test Fail!");

@@ -4,22 +4,22 @@ public class Question09 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		TestZipVector();
+		testZipVector();
 	}
 	
 	
-	public static void TestZipVector() {
+	public static void testZipVector() {
 		int binaryVtr[] = {0, 0, 0, 1,  1, 1, 1, 0};
 		
 		int result[] = zipVector(binaryVtr);
 		int resultCorrect[] = {0, 3, 1, 4, 0, 1};
 		
-		boolean TestResult = true;
+		boolean testResult = true;
 		for(int i =0; i < result.length;i++) {
-			TestResult = TestResult && (result[i] == resultCorrect[i]);
+			testResult = testResult && (result[i] == resultCorrect[i]);
 		}
 
-		if (TestResult) {
+		if (testResult) {
 			System.out.println("Test Passed!");
 		} else {
 			System.out.println("Test Fail!");

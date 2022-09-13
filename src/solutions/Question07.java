@@ -14,23 +14,23 @@ public class Question07 {
 		int vetorABackup[] = {6, 5, -12, 10};
 		int vetorBBackup[] = { 9, 1, -3, -7};
 		
-		boolean TestResult = true;
+		boolean testResult = true;
 		int vetSize1[] = {1};
 		int vetSize2[] = {1, 2};
 		
 		if (interchangeValues(vetSize1, vetSize2) > 0) {
-			TestResult = TestResult && false;
+			testResult = testResult && false;
 		}
 		
 		
 		interchangeValues(vetorA, vetorB);
 		
 		for(int i =0; i < vetorA.length;i++) {
-			TestResult = TestResult && (vetorA[i] == vetorBBackup[i]);
-			TestResult = TestResult && (vetorB[i] == vetorABackup[i]);
+			testResult = testResult && (vetorA[i] == vetorBBackup[i]);
+			testResult = testResult && (vetorB[i] == vetorABackup[i]);
 		}
 
-		if (TestResult) {
+		if (testResult) {
 			System.out.println("Test Passed!");
 		} else {
 			System.out.println("Test Fail!");

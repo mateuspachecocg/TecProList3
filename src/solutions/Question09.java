@@ -1,6 +1,6 @@
 package solutions;
 
-public class Question10 {
+public class Question09 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -33,7 +33,7 @@ public class Question10 {
 		
 		for (i = 0;i < vtr.length;i++) {
 			if (pointer != vtr[i]) {
-				lengthNewVector++;
+       	lengthNewVector++;
 				pointer = vtr[i];
 			}
 		}

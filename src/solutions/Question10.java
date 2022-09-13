@@ -1,17 +1,18 @@
 package solutions;
 
-public class Question10 {
+public class Question09 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		testUnzipVector();
+		testZipVector();
 	}
 	
-	public static void testUnzipVector() {
-		int zipVtr[] = {0, 3, 1, 4, 0, 1};
+	
+	public static void testZipVector() {
+		int binaryVtr[] = {0, 0, 0, 1,  1, 1, 1, 0};
 		
-		int result[] = unzipVector(zipVtr);
-		int resultCorrect[] = {0, 0, 0, 1,  1, 1, 1, 0};
+		int result[] = zipVector(binaryVtr);
+		int resultCorrect[] = {0, 3, 1, 4, 0, 1};
 		
 		boolean testResult = true;
 		for(int i =0; i < result.length;i++) {
@@ -23,22 +24,33 @@ public class Question10 {
 		} else {
 			System.out.println("Test Fail!");
 		}
-		
 	}
-		
 	
-	public static int[] unzipVector(int vtr[]) {
-		int sizeVtr = 0, i, k;
+	public static int[] zipVector(int vtr[]) {
+		int lengthNewVector = 1;
+		int pointer = vtr[0];
+		int i;
 		
-		for (i = 1;i < vtr.length/2;i += 2) {
-			sizeVtr += vtr[i];
+		for (i = 0;i < vtr.length;i++) {
+			if (pointer != vtr[i]) {
+				lengthNewVector++;
+				pointer = vtr[i];
+			}
 		}
 		
-		int output[] = new int[sizeVtr];
+		lengthNewVector = lengthNewVector*2;
 		
-		for (i = 1, k = 0;i < vtr.length/2;i += 2) {
-			for (;k < vtr[i];k++) {
-				output[k] = vtr[i-1]; 
+		int output[] = new int[lengthNewVector];
+		int cont = 0;
+		for (i = i -1;i > -1;i--) {
+			if (vtr[i] == pointer && i != 0) {
+				cont++;
+			} else {
+				output[lengthNewVector-1] = i == 0 ? cont+1:cont;
+				output[lengthNewVector-2] = pointer;
+				lengthNewVector -= 2;
+				pointer = vtr[i];
+				cont = 1;
 			}
 		}
 		

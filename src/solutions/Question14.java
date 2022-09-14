@@ -13,7 +13,18 @@ public class Question14 {
 	
 		char vtrResult[] = charCount(vtrTest);
 		
-		boolean testResult = vtrExpected.equals(vtrResult);
+ 		boolean testResult = true;
+		
+		if(vtrResult.length == vtrExpected.length) {
+			for(int i =0;i < vtrResult.length;i++) {
+				testResult = testResult && (vtrResult[i] == vtrExpected[i]);
+				if(testResult == false) {
+					System.out.println(i);
+				}
+			}
+		} else {
+			testResult = false;
+		}
 		
 		if (testResult) {
 			System.out.println("Test Passed!");

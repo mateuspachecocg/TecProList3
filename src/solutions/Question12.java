@@ -24,7 +24,7 @@ public class Question12 {
 	
 	public static String encondingCipher(String msg) {
 
-		char vtrEncrypter[] = { '%', '*', '(', '-', '+', '@', '#', '1', '2', '3', 'k', '4', '5', '6', '7', '8', '9',
+	  char vtrEncrypter[] = { '%', '*', '(', '-', '+', '@', '#', '1', '2', '3', 'k', '4', '5', '6', '7', '8', '9',
 				'{', '}', '!', '&', '$', 'w', '?', 'y', ':' };
 
 		StringBuilder str = new StringBuilder(msg);

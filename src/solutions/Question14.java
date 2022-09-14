@@ -35,7 +35,7 @@ public class Question14 {
 	
 	// Algorithms analog to Question10
 	public static char[] charCount(char vtrCh[]) {
-		
+		// Sorting the elements of the vector input by ASCII table
 		vtrCh = sortingCharVtr(vtrCh);
 		
 		int lengthNewVector = 1;

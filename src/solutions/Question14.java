@@ -18,9 +18,6 @@ public class Question14 {
 		if(vtrResult.length == vtrExpected.length) {
 			for(int i =0;i < vtrResult.length;i++) {
 				testResult = testResult && (vtrResult[i] == vtrExpected[i]);
-				if(testResult == false) {
-					System.out.println(i);
-				}
 			}
 		} else {
 			testResult = false;

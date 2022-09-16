@@ -1,5 +1,5 @@
 package solutions;
-public class Question16 {
+public class Question16{
 
   public static void main (String[] args) {
     testSortingOddEven();
